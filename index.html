@@ -1,81 +1,127 @@
 ﻿<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML Tutorial</title>
-    <meta name="author" content="Aneesh">
+    <meta name="author" content="Aneesh" />
     <style>
-        
-        table {
-            margin:auto;
-            width: 200px;
-            border-collapse: collapse;
-            
-        }
+      .root {
+        border: 4px solid black;
+      }
+      .buttons {
+        padding: 15px;
+      }
+      .buttons button {
+        font-size: 17px;
+      }
+      .title {
+        font-size: 50px;
+        flex-grow: 7;
+      }
+      header {
+        background-color: rgb(5, 128, 5);
+        display: flex;
+      }
+      table {
+        margin: auto;
+        width: 200px;
+        border-collapse: collapse;
+      }
 
-        td, th {
-            border: 2px solid #dddddd;
-            text-align: center;
-            padding: 10px;
-            font-size: 16px;
-            text-align: center;
-        }
-        p{font-size:21px}
+      td,
+      th {
+        border: 2px solid #dddddd;
+        text-align: center;
+        padding: 10px;
+        font-size: 16px;
+        text-align: center;
+      }
+      p {
+        font-size: 21px;
+      }
+      footer {
+        text-align: center;
+        padding: 3px;
+        background-color: rgb(5, 128, 5);
+      }
     </style>
-</head>
-<body>
-    <header style="background-color:forestgreen ;font-size:50px">HTML Tutorial for Device Info</header>
-    <br /><br />
-    <p >There are some functions which we can use to get the details of the device which we are using.</p>
-    <p>These valuse differ for every device and browser used.</p>
-    <table>
-        <tr>
-            <th>-</th>
-            <th>Screen</th>
-            <th>Browser</th>
-        </tr>
-        <tr>
-            <th>Width</th>
-            <td id="w1"></td>
-            <td id="w2"></td>
-        </tr>
-        <tr>
-            <th>Height</th>
-            <td id="h1"></td>
-            <td id="h2"></td>
-        </tr>
-        <tr>
-            <th>Pixel Depth</th>
-            <td id="pd" colspan="2"></td>
-        </tr>
-        <tr>
-            <th>Browser Platform</th>
-            <td></td>
-            <td id="bp"></td>
-        </tr>
-        <tr>
-            <th>Browser Version</th>
-            <td></td>
-            <td id="bv"></td>
-        </tr>
-        <tr>
-            <th>Browser Language</th>
-            <td></td>
-            <td id="la"></td>
-        </tr>
-    </table>
+  </head>
+  <body style="background-color: rgb(240, 199, 96)">
+    <div class="root">
+      <header>
+        <div class="title">HTML Tutorial for Device Info</div>
+        <div class="buttons"><button>Login</button></div>
+        <div class="buttons"><button>SignUp</button></div>
+      </header>
+      <br /><br />
 
-
+      <table>
+        <tr>
+          <th>-</th>
+          <th>Screen</th>
+          <th>Browser</th>
+        </tr>
+        <tr>
+          <th>Width</th>
+          <td id="w1"></td>
+          <td id="w2"></td>
+        </tr>
+        <tr>
+          <th>Height</th>
+          <td id="h1"></td>
+          <td id="h2"></td>
+        </tr>
+        <tr>
+          <th>Pixel Depth</th>
+          <td id="pd" colspan="2"></td>
+        </tr>
+        <tr>
+          <th>Browser Platform</th>
+          <td></td>
+          <td id="bp"></td>
+        </tr>
+        <tr>
+          <th>Browser Version</th>
+          <td></td>
+          <td id="bv"></td>
+        </tr>
+        <tr>
+          <th>Browser Language</th>
+          <td></td>
+          <td id="la"></td>
+        </tr>
+      </table>
+      <p>
+        1) There are some functions which we can use to get the details of the
+        device which we are using.
+      </p>
+      <p>2) These values differ for every device and browser used.</p>
+    </div>
+    <h1>HTML Video Tutorial</h1>
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/88PXJAA6szs"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
 
     <script>
-document.getElementById("w1").innerHTML = screen.width;
-document.getElementById("w2").innerHTML = window.innerWidth;
-document.getElementById("h1").innerHTML = screen.height;
-document.getElementById("h2").innerHTML = window.innerHeight;
-document.getElementById("pd").innerHTML = screen.pixelDepth;
-document.getElementById("bp").innerHTML = navigator.platform;
-document.getElementById("bv").innerHTML = navigator.appVersion;
-document.getElementById("la").innerHTML = navigator.language;
+      document.getElementById("w1").innerHTML = screen.width;
+      document.getElementById("w2").innerHTML = window.innerWidth;
+      document.getElementById("h1").innerHTML = screen.height;
+      document.getElementById("h2").innerHTML = window.innerHeight;
+      document.getElementById("pd").innerHTML = screen.pixelDepth;
+      document.getElementById("bp").innerHTML = navigator.platform;
+      document.getElementById("bv").innerHTML = navigator.appVersion;
+      document.getElementById("la").innerHTML = navigator.language;
     </script>
-</body>
+    <footer>
+      <p style="text-align: center">
+        Author: Aneesh &nbsp
+        <a href="mailto:aneesh.garray18@st.niituniversity.in"> Mail</a>
+      </p>
+    </footer>
+  </body>
 </html>
